@@ -8,7 +8,6 @@ function App() {
     isAuthenticated,
     error,
     user,
-    loginWithPopup,
     loginWithRedirect,
     logout
   } = useAuth0()
@@ -21,16 +20,17 @@ function App() {
   }
 
   if (isAuthenticated) {
+    console.log(JSON.stringify(user))
     return (
       <div>
-        Hello {user.name}{' '}
+        Hello {user.nickname}{' '}
         <button onClick={() => logout({ returnTo: window.location.origin })}>
           Log out
         </button>
       </div>
     );
   } else {
-    return <button onClick={loginWithRedirect  }>Log in</button>;
+    return <button onClick={loginWithRedirect}>Log in</button>;
   }
 }
 
