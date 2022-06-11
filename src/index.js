@@ -10,7 +10,7 @@ import env from "react-dotenv";
 ReactDOM.render(
   <Auth0Provider
     domain="jrovnerdev.acmetest.org"
-    clientId={process.env.CLIENT_ID}
+    client_id={process.env.CLIENT_ID}
     redirectUri={window.location.origin}
   >
     <App />
