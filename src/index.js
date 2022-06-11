@@ -8,7 +8,7 @@ ReactDOM.render(
   <Auth0Provider
     domain="jrovnerdev.acmetest.org"
 //    clientId='JOHbDS8ByJEgkpkDoliWbkljKvYiaryo'
-    clientId={process.env.CLIENT_ID}
+    clientId={process.env.CLIENT_ID||'JOHbDS8ByJEgkpkDoliWbkljKvYiaryo' } 
     redirectUri={window.location.origin}
   >
     <App />
