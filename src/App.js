@@ -8,6 +8,7 @@ function App() {
     isAuthenticated,
     error,
     user,
+    loginWithPopup,
     loginWithRedirect,
     logout
   } = useAuth0()
@@ -29,7 +30,7 @@ function App() {
       </div>
     );
   } else {
-    return <button onClick={loginWithRedirect}>Log in</button>;
+    return <button onClick={loginWithRedirect  }>Log in</button>;
   }
 }
 
