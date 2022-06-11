@@ -4,10 +4,12 @@ import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 import App from './App';
 
+import env from "react-dotenv";
+
 
 ReactDOM.render(
   <Auth0Provider
-    domain={process.env.DOMAIN}
+    domain="jrovnerdev.acmetest.org"
     clientId={process.env.CLIENT_ID}
     redirectUri={window.location.origin}
   >
