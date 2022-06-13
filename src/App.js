@@ -2,6 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import './App.css';
 
 function App() {
+  console.log('process: ', process)
 
   const {
     isLoading,
